@@ -1,7 +1,8 @@
-package com.haidev.pantaucorona
+package com.haidev.pantaucorona.main.views
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.haidev.pantaucorona.R
 
 class MainActivity : AppCompatActivity() {
 
