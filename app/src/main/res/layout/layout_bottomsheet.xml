@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_bottomsheet"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/ic_close" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilih lokasi"
+            android:textColor="@color/colorText"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/numberPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:dividerPadding="12dp"
+        app:np_dividerColor="#00FFFFFF"
+        app:np_height="150dp"
+        app:np_max="32"
+        app:np_min="0"
+        app:np_selectedTextColor="#888E9E"
+        app:np_selectedTextSize="16sp"
+        app:np_textColor="#888E9E"
+        app:np_textSize="14sp"
+        app:np_value="5"
+        app:np_width="64dp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTerapkan"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_button"
+        android:text="Terapkan"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText" />
+</LinearLayout>

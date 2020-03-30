@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigationKasus"
+        android:icon="@drawable/ic_kasus"
+        android:orderInCategory="1"
+        android:title="@string/txt_kasus" />
+
+    <item
+        android:id="@+id/navigationInformasi"
+        android:icon="@drawable/ic_informasi"
+        android:orderInCategory="2"
+        android:title="@string/txt_informasi" />
+
+    <item
+        android:id="@+id/navigationBantuan"
+        android:icon="@drawable/ic_bantuan"
+        android:orderInCategory="3"
+        android:title="@string/txt_bantuan" />
+
+</menu>
