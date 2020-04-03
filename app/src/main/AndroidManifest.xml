@@ -11,6 +11,9 @@
         android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".features.informasi.views.IsolasiActivity" />
+        <activity android:name=".features.informasi.views.KenaliActivity" />
+        <activity android:name=".features.informasi.views.SelfCheckupActivity" />
         <activity android:name=".menus.splash.views.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,7 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".menus.firstime.views.FirstTimeActivity"></activity>
+        <activity android:name=".menus.firstime.views.FirstTimeActivity" />
         <activity android:name=".main.views.MainActivity" />
     </application>
 

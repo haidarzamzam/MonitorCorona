@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_self_check"
+    app:startDestination="@id/selfCheck1Fragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/selfCheck1Fragment"
+        android:name="com.haidev.pantaucorona.features.informasi.views.SelfCheck1Fragment"
+        android:label="fragment_self_check1"
+        tools:layout="@layout/fragment_self_check1">
+        <action
+            android:id="@+id/toSelfCheck2"
+            app:destination="@id/selfCheck2Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/selfCheck1Fragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/toResultYes1"
+            app:destination="@id/selfCheckResultYesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/selfCheck1Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selfCheck2Fragment"
+        android:name="com.haidev.pantaucorona.features.informasi.views.SelfCheck2Fragment"
+        android:label="fragment_self_check2"
+        tools:layout="@layout/fragment_self_check2">
+        <action
+            android:id="@+id/toSelfCheck3"
+            app:destination="@id/selfCheck3Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/selfCheck2Fragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/toResultYes2"
+            app:destination="@id/selfCheckResultYesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/selfCheck2Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/selfCheck3Fragment"
+        android:name="com.haidev.pantaucorona.features.informasi.views.SelfCheck3Fragment"
+        android:label="fragment_self_check3"
+        tools:layout="@layout/fragment_self_check3">
+        <action
+            android:id="@+id/toSelfCheck4"
+            app:destination="@id/selfCheck4Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/selfCheck3Fragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/toResultYes3"
+            app:destination="@id/selfCheckResultYesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/selfCheck3Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/selfCheck4Fragment"
+        android:name="com.haidev.pantaucorona.features.informasi.views.SelfCheck4Fragment"
+        android:label="fragment_self_check4"
+        tools:layout="@layout/fragment_self_check4">
+        <action
+            android:id="@+id/toSelfCheck5"
+            app:destination="@id/selfCheck5Fragment"
+            app:popUpTo="@id/selfCheck4Fragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/toResultYes4"
+            app:destination="@id/selfCheckResultYesFragment"
+            app:popUpTo="@id/selfCheck4Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/selfCheck5Fragment"
+        android:name="com.haidev.pantaucorona.features.informasi.views.SelfCheck5Fragment"
+        android:label="fragment_self_check5"
+        tools:layout="@layout/fragment_self_check5">
+        <action
+            android:id="@+id/toResultNo5"
+            app:destination="@id/selfCheckResultNoFragment"
+            app:popUpTo="@id/selfCheck5Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/toResultYes5"
+            app:destination="@id/selfCheckResultYesFragment"
+            app:popUpTo="@id/selfCheck5Fragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/selfCheckResultNoFragment"
+        android:name="com.haidev.pantaucorona.features.informasi.views.SelfCheckResultNoFragment"
+        android:label="fragment_self_check_result_no"
+        tools:layout="@layout/fragment_self_check_result_no">
+        <action
+            android:id="@+id/toCheckAgainNo"
+            app:destination="@id/selfCheck1Fragment"
+            app:popUpTo="@id/selfCheckResultNoFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/selfCheckResultYesFragment"
+        android:name="com.haidev.pantaucorona.features.informasi.views.SelfCheckResultYesFragment"
+        android:label="fragment_self_check_result_yes"
+        tools:layout="@layout/fragment_self_check_result_yes">
+        <action
+            android:id="@+id/toCheckAgainYes"
+            app:destination="@id/selfCheck1Fragment"
+            app:popUpTo="@id/selfCheckResultYesFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

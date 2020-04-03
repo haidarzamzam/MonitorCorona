@@ -7,4 +7,19 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_kenali_covid_19">Kenali Covid 19</string>
+    <string name="txt_apakah_kamu_tahu_tentang_covid_19">Apakah kamu tahu tentang COVID-19?</string>
+    <string name="txt_pengobatan_tingkat_lanjut">Petunjuk Isolasi Mandiri</string>
+    <string name="txt_bagaimana_tindak_lanjut_setelah_kena_covid">Tidak semua pasien harus ke rumah sakit</string>
+    <string name="txt_cari_tau_tentang_ncovid_19">Cari tau tentang\nCOVID-19</string>
+    <string name="txt_kenali_gejala_dan_cara_mengatasinya">Kenali gejala dan cara mengatasinya</string>
+    <string name="txt_self_checkup_yuk">Self checkup yuk!</string>
+    <string name="txt_apakah_kamu_mengalami_salah_satu_dari_yang_berikut">Apakah kamu mengalami salah satu dari yang berikut?</string>
+    <string name="txt_pusat_bantuan_ncovid_19">Pusat Bantuan\nCOVID-19</string>
+    <string name="txt_silahkan_hubungi_kontak_dibawah_ini">Silahkan hubungi kontak dibawah ini!</string>
+    <string name="txt_penyebaran_virus_ncovid_19">Penyebaran virus\nCOVID-19</string>
+    <string name="txt_total_kasus_positif">Total kasus positif</string>
+    <string name="txt_sumber_data_informasi">Sumber data informasi</string>
+    <string name="txt_sembuh">Sembuh</string>
+    <string name="txt_meninggal">Meninggal</string>
 </resources>

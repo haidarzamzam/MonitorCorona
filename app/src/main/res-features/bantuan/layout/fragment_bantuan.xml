@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_homepage"
+    android:background="@drawable/bg_bantuan"
     android:orientation="vertical"
     android:paddingHorizontal="20dp"
     tools:context=".features.bantuan.views.BantuanFragment">
@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
-        android:text="Pusat Bantuan COVID-19"
+        android:text="@string/txt_pusat_bantuan_ncovid_19"
         android:textColor="#FFFFFF"
         android:textSize="32sp"
         android:textStyle="bold" />
@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Silahkan hubungi kontak dibawah ini!"
+        android:text="@string/txt_silahkan_hubungi_kontak_dibawah_ini"
         android:textColor="@color/colorWhite"
         android:textSize="12sp" />
 

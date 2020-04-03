@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
 
@@ -8,7 +8,7 @@
             type="com.haidev.pantaucorona.features.kasus.viewmodels.KasusViewModel" />
     </data>
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -26,7 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="56dp"
-                android:text="Penyebaran virus COVID-19"
+                android:text="@string/txt_penyebaran_virus_ncovid_19"
                 android:textColor="#FFFFFF"
                 android:textSize="32sp"
                 android:textStyle="bold" />
@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:drawableLeft="@drawable/ic_location"
+                android:drawableStart="@drawable/ic_location"
                 android:drawablePadding="4dp"
                 android:textColor="#80FFFFFF"
                 android:textSize="18sp"
@@ -66,7 +66,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Total kasus positif"
+                        android:text="@string/txt_total_kasus_positif"
                         android:textColor="@color/colorWhite" />
 
                     <androidx.appcompat.widget.AppCompatTextView
@@ -75,7 +75,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:textColor="@color/colorWhite"
-                        android:textSize="24dp"
+                        android:textSize="24sp"
                         android:textStyle="bold" />
 
                     <androidx.appcompat.widget.AppCompatTextView
@@ -92,6 +92,7 @@
                     android:layout_marginHorizontal="12dp"
                     android:layout_marginTop="108dp"
                     android:orientation="horizontal"
+                    android:baselineAligned="false"
                     android:weightSum="2">
 
                     <LinearLayout
@@ -99,7 +100,7 @@
                         android:layout_height="120dp"
                         android:layout_marginEnd="8dp"
                         android:layout_weight="1"
-                        android:background="@drawable/bg_card"
+                        android:background="@drawable/bg_card_informasi"
                         android:gravity="center_horizontal"
                         android:orientation="vertical">
 
@@ -117,14 +118,14 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="12dp"
                             android:textColor="@color/colorText"
-                            android:textSize="24dp"
+                            android:textSize="24sp"
                             android:textStyle="bold" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="6dp"
-                            android:text="Meninggal"
+                            android:text="@string/txt_meninggal"
                             android:textColor="@color/colorText" />
                     </LinearLayout>
 
@@ -133,7 +134,7 @@
                         android:layout_height="120dp"
                         android:layout_marginStart="8dp"
                         android:layout_weight="1"
-                        android:background="@drawable/bg_card"
+                        android:background="@drawable/bg_card_informasi"
                         android:gravity="center_horizontal"
                         android:orientation="vertical">
 
@@ -151,14 +152,14 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="12dp"
                             android:textColor="@color/colorText"
-                            android:textSize="24dp"
+                            android:textSize="24sp"
                             android:textStyle="bold" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="6dp"
-                            android:text="Sembuh"
+                            android:text="@string/txt_sembuh"
                             android:textColor="@color/colorText" />
                     </LinearLayout>
 
@@ -170,7 +171,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="48dp"
-                android:text="Sumber data informasi"
+                android:text="@string/txt_sumber_data_informasi"
                 android:textColor="@color/colorWhite"
                 android:textSize="12sp" />
 
@@ -179,6 +180,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="12dp"
+                android:layout_marginBottom="20dp"
                 android:src="@drawable/img_sumber" />
 
         </LinearLayout>
