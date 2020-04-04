@@ -6,6 +6,6 @@
 * Build with Kotlin, Use MVVM Pattern
 
 ### Screenshot ###
-| ![](https://i.imgur.com/jXstCHr.jpg) | ![](https://i.imgur.com/TPG9BVX.jpg) | ![](https://i.imgur.com/A9qR7nl.jpg) | ![](https://i.imgur.com/fIsPL17.jpg) |
+| ![](https://i.imgur.com/k93qntw.png) | ![](https://i.imgur.com/w9NdYmL.png) | ![](https://i.imgur.com/2E9B8ce.png) | ![](https://i.imgur.com/rvB6N26.png) |
 | :---: | :---: | :---: | :---: |
-| ![](https://i.imgur.com/0t6ZfY5.jpg) | ![](https://i.imgur.com/01o9hm1.jpg) | ![](https://i.imgur.com/5qhNc8o.jpg) | ![](https://i.imgur.com/VooSD35.jpg) |
+| ![](https://i.imgur.com/yfuwhE0.png) | ![](https://i.imgur.com/azmc2MP.png) | ![](https://i.imgur.com/xTtMvrQ.png) | ![](https://i.imgur.com/7G0r4C2.png) |
