@@ -23,7 +23,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:text="Pertanyaan 5 dari 5"
-        android:textColor="@color/colorWhite" />
+        android:textColor="@color/colorAccent" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
@@ -31,7 +31,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
         android:text="Apakah kamu pernah kontak\ndengan PDP/ODP Corona?"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/colorText"
         android:textSize="24dp"
         android:textStyle="bold" />
 
@@ -107,7 +107,7 @@
                 android:background="@drawable/bg_button_yes"
                 android:text="Ya"
                 android:textAllCaps="false"
-                android:textColor="@color/colorText"
+                android:textColor="@color/colorWhite"
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>

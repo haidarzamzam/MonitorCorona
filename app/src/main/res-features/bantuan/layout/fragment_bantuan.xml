@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_bantuan"
+    android:background="@drawable/bg_homepage"
     tools:context=".features.bantuan.views.BantuanFragment">
 
     <LinearLayout
@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="56dp"
             android:text="@string/txt_pusat_bantuan_ncovid_19"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/colorText"
             android:textSize="32sp"
             android:textStyle="bold" />
 
@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:text="@string/txt_silahkan_hubungi_kontak_dibawah_ini"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/colorAccent"
             android:textSize="12sp" />
 
         <androidx.recyclerview.widget.RecyclerView

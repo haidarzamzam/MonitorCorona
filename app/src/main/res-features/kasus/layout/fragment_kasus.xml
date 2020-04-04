@@ -8,26 +8,26 @@
             type="com.haidev.pantaucorona.features.kasus.viewmodels.KasusViewModel" />
     </data>
 
-    <ScrollView
-        xmlns:tools="http://schemas.android.com/tools"
+    <ScrollView xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bg_homepage"
+        android:orientation="vertical"
         tools:context=".features.kasus.views.KasusFragment">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingHorizontal="20dp">
+            android:orientation="vertical">
 
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="56dp"
                 android:text="@string/txt_penyebaran_virus_ncovid_19"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/colorText"
                 android:textSize="32sp"
                 android:textStyle="bold" />
 
@@ -35,10 +35,12 @@
                 android:id="@+id/btnPilihLokasi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="24dp"
+                android:background="@drawable/bg_pilihlokasi"
                 android:drawableStart="@drawable/ic_location_active"
                 android:drawablePadding="4dp"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/colorText"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -46,68 +48,112 @@
                 android:id="@+id/txtUpdate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="8dp"
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/colorAccent"
                 android:textSize="12sp" />
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp">
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="123dp"
-                    android:background="@drawable/bg_transparent"
-                    android:gravity="center_horizontal"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp"
+                    android:weightSum="2">
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:layout_width="wrap_content"
+                    <RelativeLayout
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="@string/txt_total_kasus_positif"
-                        android:textColor="@color/colorWhite" />
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_card_kasus"
+                        android:padding="12dp">
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/txtKasus"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvKasus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kasus Daerah"
+                            android:textColor="@color/colorText" />
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/txtTotalKasus"
-                        android:layout_width="wrap_content"
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/bg_blue"
+                            android:padding="6dp"
+                            android:src="@drawable/ic_blue" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtKasus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvKasus"
+                            android:layout_marginTop="26dp"
+                            android:textColor="@color/colorText"
+                            android:textSize="32sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btnKasusDunia"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:textColor="@color/colorWhite" />
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lihat total kasus global"
+                            android:textColor="#888E9E"
+                            android:textSize="12sp" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/ic_arrow" />
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="12dp"
-                    android:layout_marginTop="108dp"
+                    android:layout_marginHorizontal="20dp"
                     android:orientation="horizontal"
-                    android:baselineAligned="false"
+                    android:paddingTop="20dp"
                     android:weightSum="2">
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="120dp"
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginEnd="8dp"
                         android:layout_weight="1"
-                        android:background="@drawable/bg_card_informasi"
-                        android:gravity="center_horizontal"
-                        android:orientation="vertical">
+                        android:background="@drawable/bg_card_kasus"
+                        android:padding="12dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvMeninggal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_meninggal"
+                            android:textColor="@color/colorText" />
 
                         <androidx.appcompat.widget.AppCompatImageView
-                            android:layout_width="36dp"
-                            android:layout_height="36dp"
-                            android:layout_marginTop="8dp"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
                             android:background="@drawable/bg_red"
                             android:padding="6dp"
                             android:src="@drawable/ic_red" />
@@ -116,32 +162,33 @@
                             android:id="@+id/txtMeninggal"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
+                            android:layout_below="@id/tvMeninggal"
+                            android:layout_marginTop="26dp"
                             android:textColor="@color/colorText"
-                            android:textSize="24sp"
+                            android:textSize="32sp"
                             android:textStyle="bold" />
+                    </RelativeLayout>
 
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="6dp"
-                            android:text="@string/txt_meninggal"
-                            android:textColor="@color/colorText" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="120dp"
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_weight="1"
-                        android:background="@drawable/bg_card_informasi"
-                        android:gravity="center_horizontal"
-                        android:orientation="vertical">
+                        android:background="@drawable/bg_card_kasus"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvSembuh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_sembuh"
+                            android:textColor="@color/colorText" />
 
                         <androidx.appcompat.widget.AppCompatImageView
-                            android:layout_width="36dp"
-                            android:layout_height="36dp"
-                            android:layout_marginTop="8dp"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
                             android:background="@drawable/bg_green"
                             android:padding="6dp"
                             android:src="@drawable/ic_green" />
@@ -150,38 +197,32 @@
                             android:id="@+id/txtSembuh"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
+                            android:layout_below="@id/tvSembuh"
+                            android:layout_marginTop="26dp"
                             android:textColor="@color/colorText"
-                            android:textSize="24sp"
+                            android:textSize="32sp"
                             android:textStyle="bold" />
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="6dp"
-                            android:text="@string/txt_sembuh"
-                            android:textColor="@color/colorText" />
-                    </LinearLayout>
-
+                    </RelativeLayout>
                 </LinearLayout>
-            </RelativeLayout>
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="48dp"
-                android:text="@string/txt_sumber_data_informasi"
-                android:textColor="@color/colorWhite"
-                android:textSize="12sp" />
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="20dp"
-                android:src="@drawable/img_sumber" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="28dp"
+                    android:text="@string/txt_sumber_data_informasi"
+                    android:textColor="#BDBDBE"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/img_sumber" />
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

@@ -56,5 +56,5 @@
         android:background="@drawable/bg_button"
         android:text="Terapkan"
         android:textAllCaps="false"
-        android:textColor="@color/colorText" />
+        android:textColor="@color/colorWhite" />
 </LinearLayout>

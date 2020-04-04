@@ -1,6 +1,7 @@
 package com.haidev.pantaucorona.features.kasus.views
 
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -53,6 +54,9 @@ class KasusFragment : Fragment() {
         appModel = mAppPreference.getPref()
         getData()
 
+        kasusBinding.btnKasusDunia.setOnClickListener {
+            startActivity(Intent(context, KasusDuniaActivity::class.java))
+        }
         kasusBinding.btnPilihLokasi.setOnClickListener {
             val view = layoutInflater.inflate(R.layout.bottomsheet_provinsi, null)
             val dialog = BottomSheetDialog(context!!)
@@ -160,9 +164,6 @@ class KasusFragment : Fragment() {
         kasusBinding.txtKasus.text = listKasusProvinsi[0].kasusPosi.toString()
         kasusBinding.txtMeninggal.text = listKasusProvinsi[0].kasusMeni.toString()
         kasusBinding.txtSembuh.text = listKasusProvinsi[0].kasusSemb.toString()
-        var total: Int? =
-            listKasusProvinsi[0].kasusPosi + listKasusProvinsi[0].kasusMeni + listKasusProvinsi[0].kasusSemb
-        kasusBinding.txtTotalKasus.text = "dari total $total kasus"
     }
 
     private fun onErrorData(it: Throwable?) {

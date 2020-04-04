@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_firsttimer"
+    android:background="@drawable/bg_firsttime"
     android:orientation="vertical"
     android:paddingHorizontal="20dp"
     tools:context=".menus.firstime.views.FirstTimeActivity">
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         android:text="Dimana lokasimu sekarang?"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/colorText"
         android:textSize="32sp"
         android:textStyle="bold" />
 
@@ -21,11 +21,12 @@
         android:id="@+id/btnPilihLokasi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/bg_pilihlokasi"
         android:layout_marginTop="24dp"
         android:drawableLeft="@drawable/ic_location"
         android:drawablePadding="4dp"
         android:text="Pilih lokasi"
-        android:textColor="#80FFFFFF"
+        android:textColor="#80394A6D"
         android:textSize="18sp"
         android:textStyle="bold" />
 
