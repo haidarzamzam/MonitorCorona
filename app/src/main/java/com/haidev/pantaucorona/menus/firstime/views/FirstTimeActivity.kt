@@ -10,7 +10,7 @@ import com.haidev.pantaucorona.main.views.MainActivity
 import com.haidev.pantaucorona.preferences.AppModel
 import com.haidev.pantaucorona.preferences.AppPreference
 import kotlinx.android.synthetic.main.activity_first_time.*
-import kotlinx.android.synthetic.main.layout_bottomsheet.view.*
+import kotlinx.android.synthetic.main.bottomsheet_provinsi.view.*
 
 class FirstTimeActivity : AppCompatActivity() {
 
@@ -28,8 +28,8 @@ class FirstTimeActivity : AppCompatActivity() {
         appModel = mAppPreference.getPref()
 
         btnPilihLokasi.setOnClickListener {
-            val view = layoutInflater.inflate(R.layout.layout_bottomsheet, null)
-            val dialog = BottomSheetDialog(this)
+            val view = layoutInflater.inflate(R.layout.bottomsheet_provinsi, null)
+            val dialog = BottomSheetDialog(this, R.style.BaseBottomSheetDialog)
             view.close.setOnClickListener {
                 dialog.dismiss()
             }

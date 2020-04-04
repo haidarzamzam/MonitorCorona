@@ -19,11 +19,15 @@ import com.haidev.pantaucorona.features.kasus.models.KasusModel
 import com.haidev.pantaucorona.features.kasus.viewmodels.KasusViewModel
 import com.haidev.pantaucorona.preferences.AppModel
 import com.haidev.pantaucorona.preferences.AppPreference
-import kotlinx.android.synthetic.main.layout_bottomsheet.view.*
+import kotlinx.android.synthetic.main.bottomsheet_provinsi.view.*
+import kotlinx.android.synthetic.main.bottomsheet_provinsi.view.close
+import kotlinx.android.synthetic.main.bottomsheet_reload.view.*
+import retrofit2.HttpException
 import java.text.SimpleDateFormat
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import java.util.*
+import javax.net.ssl.HttpsURLConnection
 
 class KasusFragment : Fragment() {
 
@@ -50,7 +54,7 @@ class KasusFragment : Fragment() {
         getData()
 
         kasusBinding.btnPilihLokasi.setOnClickListener {
-            val view = layoutInflater.inflate(R.layout.layout_bottomsheet, null)
+            val view = layoutInflater.inflate(R.layout.bottomsheet_provinsi, null)
             val dialog = BottomSheetDialog(context!!)
             view.close.setOnClickListener {
                 dialog.dismiss()
@@ -163,7 +167,40 @@ class KasusFragment : Fragment() {
 
     private fun onErrorData(it: Throwable?) {
         dialogLoad?.dismiss()
+        if (it is HttpException) {
+            when (it.code()) {
+                HttpsURLConnection.HTTP_BAD_REQUEST -> {
+                    onReloadData("Sepertinya ada kendala nih, kamu bisa coba lagi")
+                }
+                HttpsURLConnection.HTTP_FORBIDDEN -> {
+                    onReloadData("Sepertinya ada kendala nih, kamu bisa coba lagi")
+                }
+                HttpsURLConnection.HTTP_INTERNAL_ERROR -> {
+                    onReloadData("Sepertinya ada kendala nih, kamu bisa coba lagi")
+                }
+                else -> {
+                    onReloadData("Sepertinya ada kendala nih, kamu bisa coba lagi")
+                }
+            }
+        }
+        onReloadData("Coba cek internet kamu, masih nyambung ga?")
     }
 
+    fun onReloadData(message: String) {
+        val view = layoutInflater.inflate(R.layout.bottomsheet_reload, null)
+        val dialog = BottomSheetDialog(context!!, R.style.BaseBottomSheetDialog)
+        view.close.setOnClickListener {
+            dialog.dismiss()
+        }
 
+        view.btnReload.setOnClickListener {
+            dialog.dismiss()
+            getData()
+        }
+
+        view.tvMessageReload.text = message
+
+        dialog.setContentView(view)
+        dialog.show()
+    }
 }
