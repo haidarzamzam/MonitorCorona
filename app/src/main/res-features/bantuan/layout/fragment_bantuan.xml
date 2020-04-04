@@ -1,33 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_bantuan"
-    android:orientation="vertical"
-    android:paddingHorizontal="20dp"
     tools:context=".features.bantuan.views.BantuanFragment">
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="@string/txt_pusat_bantuan_ncovid_19"
-        android:textColor="#FFFFFF"
-        android:textSize="32sp"
-        android:textStyle="bold" />
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/txt_silahkan_hubungi_kontak_dibawah_ini"
-        android:textColor="@color/colorWhite"
-        android:textSize="12sp" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:text="@string/txt_pusat_bantuan_ncovid_19"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvBantuan"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="24dp" />
-</LinearLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/txt_silahkan_hubungi_kontak_dibawah_ini"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvBantuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

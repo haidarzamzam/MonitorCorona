@@ -90,12 +90,20 @@
         <action
             android:id="@+id/toSelfCheck5"
             app:destination="@id/selfCheck5Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
             app:popUpTo="@id/selfCheck4Fragment"
             app:popUpToInclusive="true" />
 
         <action
             android:id="@+id/toResultYes4"
             app:destination="@id/selfCheckResultYesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
             app:popUpTo="@id/selfCheck4Fragment"
             app:popUpToInclusive="true" />
     </fragment>
@@ -107,11 +115,19 @@
         <action
             android:id="@+id/toResultNo5"
             app:destination="@id/selfCheckResultNoFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
             app:popUpTo="@id/selfCheck5Fragment"
             app:popUpToInclusive="true" />
         <action
             android:id="@+id/toResultYes5"
             app:destination="@id/selfCheckResultYesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
             app:popUpTo="@id/selfCheck5Fragment"
             app:popUpToInclusive="true" />
 
@@ -124,6 +140,10 @@
         <action
             android:id="@+id/toCheckAgainNo"
             app:destination="@id/selfCheck1Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
             app:popUpTo="@id/selfCheckResultNoFragment"
             app:popUpToInclusive="true" />
     </fragment>
@@ -135,6 +155,10 @@
         <action
             android:id="@+id/toCheckAgainYes"
             app:destination="@id/selfCheck1Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
             app:popUpTo="@id/selfCheckResultYesFragment"
             app:popUpToInclusive="true" />
     </fragment>

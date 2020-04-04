@@ -29,6 +29,7 @@ class BantuanFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         rvBantuan.setHasFixedSize(true)
+        rvBantuan.isNestedScrollingEnabled = false
         listBantuan.addAll(getListBantuan())
         showRecyclerList()
     }

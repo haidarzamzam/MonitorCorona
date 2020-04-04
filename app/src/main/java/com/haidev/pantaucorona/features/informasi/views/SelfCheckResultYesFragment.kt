@@ -1,6 +1,7 @@
 package com.haidev.pantaucorona.features.informasi.views
 
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -39,7 +40,11 @@ class SelfCheckResultYesFragment : Fragment() {
             startActivity(Intent(context, IsolasiActivity::class.java))
         }
 
+
         btnCallNumber.setOnClickListener {
+            val returnIntent = Intent()
+            returnIntent.putExtra("result", "Hey, I received your intent!")
+            activity?.setResult(Activity.RESULT_OK, returnIntent)
             activity?.finish()
         }
     }
