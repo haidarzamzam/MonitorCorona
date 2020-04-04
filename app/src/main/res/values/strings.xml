@@ -22,4 +22,50 @@
     <string name="txt_sumber_data_informasi">Sumber data informasi</string>
     <string name="txt_sembuh">Sembuh</string>
     <string name="txt_meninggal">Meninggal</string>
+
+
+    <string-array name="data_name">
+        <item>Kementrian Kesehatan</item>
+        <item>Kementrian Kesehatan (Alternatif)</item>
+        <item>Pemprov DKI Jakarta</item>
+        <item>Pemprov DKI Jakarta (Alternatif)</item>
+        <item>Pemprov Jawa Tengah</item>
+        <item>Pemprov Jawa Tengah (Alternatif)</item>
+        <item>Pemprov Jawa Timur</item>
+        <item>Pemprov Jawa Timur (Alternatif)</item>
+        <item>Pemprov Jawa Barat</item>
+        <item>Pemprov Jawa Barat (Alternatif)</item>
+        <item>Pemprov D.I Yogyakarta</item>
+        <item>Pemprov D.I Yogyakarta (Alternatif)</item>
+    </string-array>
+
+    <string-array name="data_phone">
+        <item>0215210411</item>
+        <item>081212123119</item>
+        <item>112</item>
+        <item>081388376955</item>
+        <item>0243580713</item>
+        <item>082313600560</item>
+        <item>0318430313</item>
+        <item>081334367800</item>
+        <item>119</item>
+        <item>08112093306</item>
+        <item>0274555585</item>
+        <item>08112764800</item>
+    </string-array>
+
+    <string-array name="data_photo">
+        <item>https://kawalcorona.com/uploads/unnamed-9mT.png</item>
+        <item>https://kawalcorona.com/uploads/unnamed-9mT.png</item>
+        <item>https://kawalcorona.com/uploads/logo-dki.png</item>
+        <item>https://kawalcorona.com/uploads/logo-dki.png</item>
+        <item>https://kawalcorona.com/uploads/jatengnew.png</item>
+        <item>https://kawalcorona.com/uploads/jatengnew.png</item>
+        <item>https://kawalcorona.com/uploads/jatim.png</item>
+        <item>https://kawalcorona.com/uploads/jatim.png</item>
+        <item>https://kawalcorona.com/uploads/jabar.png</item>
+        <item>https://kawalcorona.com/uploads/jabar.png</item>
+        <item>https://kawalcorona.com/uploads/yogya.jpg</item>
+        <item>https://kawalcorona.com/uploads/yogya.jpg</item>
+    </string-array>
 </resources>
