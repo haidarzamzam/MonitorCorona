@@ -1,5 +1,5 @@
-# Pantau Corona #
-[![](https://api.travis-ci.com/haidarzamzam/PantauCorona.svg)](https://travis-ci.com/haidarzamzam/PantauCorona)
+# Monitor Corona #
+[![](https://api.travis-ci.com/haidarzamzam/MonitorCorona.svg)](https://travis-ci.com/haidarzamzam/MonitorCorona)
 
 * version name 1.0
 * version code 1
