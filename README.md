@@ -5,6 +5,9 @@
 * Version code 2
 * Build with Kotlin, Use MVVM Pattern
 
+### Download ###
+[![](https://i.imgur.com/E0QyGWW.png)](https://tsfr.io/monitorcorona)
+
 ### Screenshot ###
 | ![](https://i.imgur.com/LTmT03y.png) | ![](https://i.imgur.com/S6JggSa.png) | ![](https://i.imgur.com/kht3ECf.png) | ![](https://i.imgur.com/I4Q2xGL.png) |
 | :---: | :---: | :---: | :---: |
