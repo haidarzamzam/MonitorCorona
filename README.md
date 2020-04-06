@@ -1,14 +1,14 @@
 # Monitor Corona #
 [![](https://api.travis-ci.com/haidarzamzam/MonitorCorona.svg)](https://travis-ci.com/haidarzamzam/MonitorCorona)
 
-* version name 1.0
-* version code 1
+* Version name 2.0
+* Version code 2
 * Build with Kotlin, Use MVVM Pattern
 
 ### Screenshot ###
-| ![](https://i.imgur.com/k93qntw.png) | ![](https://i.imgur.com/w9NdYmL.png) | ![](https://i.imgur.com/2E9B8ce.png) | ![](https://i.imgur.com/rvB6N26.png) |
+| ![](https://i.imgur.com/LTmT03y.png) | ![](https://i.imgur.com/S6JggSa.png) | ![](https://i.imgur.com/kht3ECf.png) | ![](https://i.imgur.com/I4Q2xGL.png) |
 | :---: | :---: | :---: | :---: |
-| ![](https://i.imgur.com/yfuwhE0.png) | ![](https://i.imgur.com/azmc2MP.png) | ![](https://i.imgur.com/xTtMvrQ.png) | ![](https://i.imgur.com/7G0r4C2.png) |
+| ![](https://i.imgur.com/7aV2V3W.png) | ![](https://i.imgur.com/CVz1cEK.png) | ![](https://i.imgur.com/jVBk0dY.png) | ![](https://i.imgur.com/KC5STMz.png) |
 
 ### Thanks Team ###
 * [Roa Nuha as UX Designer](https://www.instagram.com/roa.nuh/)
