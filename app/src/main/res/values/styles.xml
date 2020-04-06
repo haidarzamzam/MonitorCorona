@@ -18,4 +18,8 @@
         <item name="bottomSheetStyle">@style/BottomSheet</item>
     </style>
 
+    <style name="collapsed_app_bar" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
 </resources>

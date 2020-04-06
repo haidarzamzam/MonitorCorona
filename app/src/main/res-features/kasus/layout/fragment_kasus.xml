@@ -5,7 +5,7 @@
 
         <variable
             name="kasus"
-            type="com.haidev.pantaucorona.features.kasus.viewmodels.KasusViewModel" />
+            type="com.haidev.monitorcorona.features.kasus.viewmodels.KasusViewModel" />
     </data>
 
     <ScrollView xmlns:tools="http://schemas.android.com/tools"
@@ -25,7 +25,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="56dp"
+                android:layout_marginTop="44dp"
                 android:text="@string/txt_penyebaran_virus_ncovid_19"
                 android:textColor="@color/colorText"
                 android:textSize="32sp"
@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/bg_pilihlokasi"
                 android:drawableStart="@drawable/ic_location_active"
                 android:drawablePadding="4dp"
@@ -217,7 +217,7 @@
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="24dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="12dp"
                     android:layout_marginBottom="20dp"

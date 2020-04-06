@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.haidev.pantaucorona">
+    package="com.haidev.monitorcorona">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/icon_app"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/ic_launcher"
+        android:roundIcon="@drawable/icon_app"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".features.kasus.views.KasusDuniaActivity"></activity>
-        <activity android:name=".features.informasi.views.IsolasiActivity" />
-        <activity android:name=".features.informasi.views.KenaliActivity" />
-        <activity android:name=".features.informasi.views.SelfCheckupActivity" />
-        <activity android:name=".menus.splash.views.SplashScreenActivity">
+        <activity android:name="com.haidev.monitorcorona.features.kasus.views.KasusDuniaActivity" />
+        <activity android:name="com.haidev.monitorcorona.features.informasi.views.IsolasiActivity" />
+        <activity android:name="com.haidev.monitorcorona.features.informasi.views.KenaliActivity" />
+        <activity android:name="com.haidev.monitorcorona.features.informasi.views.SelfCheckupActivity" />
+        <activity android:name="com.haidev.monitorcorona.menus.splash.views.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".menus.firstime.views.FirstTimeActivity" />
-        <activity android:name=".main.views.MainActivity" />
+        <activity android:name="com.haidev.monitorcorona.menus.firstime.views.FirstTimeActivity" />
+        <activity android:name="com.haidev.monitorcorona.main.views.MainActivity" />
     </application>
 
 </manifest>

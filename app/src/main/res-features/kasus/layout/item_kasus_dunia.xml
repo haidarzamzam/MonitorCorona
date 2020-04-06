@@ -5,7 +5,7 @@
 
         <variable
             name="itemKasusDunia"
-            type="com.haidev.pantaucorona.features.kasus.viewmodels.ItemKasusDuniaViewModel" />
+            type="com.haidev.monitorcorona.features.kasus.viewmodels.ItemKasusDuniaViewModel" />
     </data>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/tvKasus"
             android:layout_marginTop="8dp"
-            android:background="@drawable/bg_card_kasus"
+            android:background="@drawable/bg_card_kasus_in"
             android:orientation="horizontal"
             android:weightSum="3">
 

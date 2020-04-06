@@ -5,13 +5,13 @@
 
     <fragment
         android:id="@+id/navigationKasus"
-        android:name="com.haidev.pantaucorona.features.kasus.views.KasusFragment"
+        android:name="com.haidev.monitorcorona.features.kasus.views.KasusFragment"
         android:label="KasusFragment"
         tools:layout="@layout/fragment_kasus" />
 
     <fragment
         android:id="@+id/navigationInformasi"
-        android:name="com.haidev.pantaucorona.features.informasi.views.InformasiFragment"
+        android:name="com.haidev.monitorcorona.features.informasi.views.InformasiFragment"
         android:label="InformasiFragment"
         tools:layout="@layout/fragment_informasi" >
         <action
@@ -21,7 +21,7 @@
 
     <fragment
         android:id="@+id/navigationBantuan"
-        android:name="com.haidev.pantaucorona.features.bantuan.views.BantuanFragment"
+        android:name="com.haidev.monitorcorona.features.bantuan.views.BantuanFragment"
         android:label="BantuanFragment"
         tools:layout="@layout/fragment_bantuan" />
 </navigation>

@@ -36,7 +36,6 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_marginTop="20dp"
-        android:dividerPadding="12dp"
         app:np_dividerColor="#00FFFFFF"
         app:np_height="150dp"
         app:np_max="32"
@@ -45,7 +44,7 @@
         app:np_selectedTextSize="16sp"
         app:np_textColor="#888E9E"
         app:np_textSize="14sp"
-        app:np_value="5"
+        app:np_value="1"
         app:np_width="64dp" />
 
 

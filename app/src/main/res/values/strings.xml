@@ -1,11 +1,10 @@
 <resources>
-    <string name="app_name">PantauCorona</string>
+    <string name="app_name">MonitorCorona</string>
 
     <string name="txt_kasus">Kasus</string>
     <string name="txt_informasi">Informasi</string>
     <string name="txt_bantuan">Bantuan</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="txt_kenali_covid_19">Kenali COVID-19</string>
     <string name="txt_apakah_kamu_tahu_tentang_covid_19">Cari tau apa itu wabah corona virus</string>
     <string name="txt_pengobatan_tingkat_lanjut">Petunjuk Isolasi Mandiri</string>

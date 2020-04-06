@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/selfCheck1Fragment"
-        android:name="com.haidev.pantaucorona.features.informasi.views.SelfCheck1Fragment"
+        android:name="com.haidev.monitorcorona.features.informasi.views.SelfCheck1Fragment"
         android:label="fragment_self_check1"
         tools:layout="@layout/fragment_self_check1">
         <action
@@ -33,7 +33,7 @@
 
     <fragment
         android:id="@+id/selfCheck2Fragment"
-        android:name="com.haidev.pantaucorona.features.informasi.views.SelfCheck2Fragment"
+        android:name="com.haidev.monitorcorona.features.informasi.views.SelfCheck2Fragment"
         android:label="fragment_self_check2"
         tools:layout="@layout/fragment_self_check2">
         <action
@@ -58,7 +58,7 @@
     </fragment>
     <fragment
         android:id="@+id/selfCheck3Fragment"
-        android:name="com.haidev.pantaucorona.features.informasi.views.SelfCheck3Fragment"
+        android:name="com.haidev.monitorcorona.features.informasi.views.SelfCheck3Fragment"
         android:label="fragment_self_check3"
         tools:layout="@layout/fragment_self_check3">
         <action
@@ -83,7 +83,7 @@
     </fragment>
     <fragment
         android:id="@+id/selfCheck4Fragment"
-        android:name="com.haidev.pantaucorona.features.informasi.views.SelfCheck4Fragment"
+        android:name="com.haidev.monitorcorona.features.informasi.views.SelfCheck4Fragment"
         android:label="fragment_self_check4"
         tools:layout="@layout/fragment_self_check4">
         <action
@@ -108,7 +108,7 @@
     </fragment>
     <fragment
         android:id="@+id/selfCheck5Fragment"
-        android:name="com.haidev.pantaucorona.features.informasi.views.SelfCheck5Fragment"
+        android:name="com.haidev.monitorcorona.features.informasi.views.SelfCheck5Fragment"
         android:label="fragment_self_check5"
         tools:layout="@layout/fragment_self_check5">
         <action
@@ -133,7 +133,7 @@
     </fragment>
     <fragment
         android:id="@+id/selfCheckResultNoFragment"
-        android:name="com.haidev.pantaucorona.features.informasi.views.SelfCheckResultNoFragment"
+        android:name="com.haidev.monitorcorona.features.informasi.views.SelfCheckResultNoFragment"
         android:label="fragment_self_check_result_no"
         tools:layout="@layout/fragment_self_check_result_no">
         <action
@@ -148,7 +148,7 @@
     </fragment>
     <fragment
         android:id="@+id/selfCheckResultYesFragment"
-        android:name="com.haidev.pantaucorona.features.informasi.views.SelfCheckResultYesFragment"
+        android:name="com.haidev.monitorcorona.features.informasi.views.SelfCheckResultYesFragment"
         android:label="fragment_self_check_result_yes"
         tools:layout="@layout/fragment_self_check_result_yes">
         <action
